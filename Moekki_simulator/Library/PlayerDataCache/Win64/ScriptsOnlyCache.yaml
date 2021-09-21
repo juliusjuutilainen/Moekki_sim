@@ -3,6 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - MouseLook
     - PlayerMovement
+    StylizedWaterForURP.dll:
+    - StylizedWater.StylizedWaterURP
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -36,16 +38,46 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.ForwardRendererData
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+    - UnityEngine.Rendering.Universal.UniversalAdditionalLightData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.XRSystemData
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.ShaderGraph.Editor.dll:
-    - UnityEditor.Graphing.GraphObject
-    - UnityEditor.ShaderGraph.Drawing.MaterialGraphEditWindow
-    - UnityEditor.ShaderGraph.SubGraphAsset
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
+    Unity.TerrainTools.Editor.dll:
+    - UnityEditor.Experimental.TerrainAPI.BillowNoise
+    - UnityEditor.Experimental.TerrainAPI.BridgeTool
+    - UnityEditor.Experimental.TerrainAPI.CloneBrushTool
+    - UnityEditor.Experimental.TerrainAPI.ContrastTool
+    - UnityEditor.Experimental.TerrainAPI.FbmFractalType
+    - UnityEditor.Experimental.TerrainAPI.MeshStampTool
+    - UnityEditor.Experimental.TerrainAPI.NoiseBlitShaderGenerator
+    - UnityEditor.Experimental.TerrainAPI.NoiseFillShaderGenerator
+    - UnityEditor.Experimental.TerrainAPI.NoiseHeightTool
+    - UnityEditor.Experimental.TerrainAPI.NoneFractalType
+    - UnityEditor.Experimental.TerrainAPI.PaintHeightTool
+    - UnityEditor.Experimental.TerrainAPI.PaintHolesTool
+    - UnityEditor.Experimental.TerrainAPI.PaintTextureTool
+    - UnityEditor.Experimental.TerrainAPI.PerlinNoise
+    - UnityEditor.Experimental.TerrainAPI.RidgeNoise
+    - UnityEditor.Experimental.TerrainAPI.SetHeightTool
+    - UnityEditor.Experimental.TerrainAPI.SharpenPeaksTool
+    - UnityEditor.Experimental.TerrainAPI.SlopeFlattenTool
+    - UnityEditor.Experimental.TerrainAPI.SmoothHeightTool
+    - UnityEditor.Experimental.TerrainAPI.StampTool
+    - UnityEditor.Experimental.TerrainAPI.StrataFractalType
+    - UnityEditor.Experimental.TerrainAPI.TerraceErosion
+    - UnityEditor.Experimental.TerrainAPI.ThermalErosionTool
+    - UnityEditor.Experimental.TerrainAPI.ValueNoise
+    - UnityEditor.Experimental.TerrainAPI.VoronoiNoise
+    - UnityEditor.Experimental.TerrainAPI.WindErosionTool
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -86,101 +118,115 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1578}
+      Script: {instanceID: 1586}
     - Class: 114
-      Script: {instanceID: 1580}
+      Script: {instanceID: 1588}
     - Class: 114
-      Script: {instanceID: 1582}
+      Script: {instanceID: 1590}
     - Class: 114
-      Script: {instanceID: 1584}
+      Script: {instanceID: 1592}
     - Class: 114
-      Script: {instanceID: 1594}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 1840}
+      Script: {instanceID: 1848}
     - Class: 114
-      Script: {instanceID: 1930}
+      Script: {instanceID: 1938}
     - Class: 114
-      Script: {instanceID: 1962}
+      Script: {instanceID: 1970}
     - Class: 114
-      Script: {instanceID: 2052}
+      Script: {instanceID: 2060}
     - Class: 114
-      Script: {instanceID: 2392}
+      Script: {instanceID: 2400}
     - Class: 114
-      Script: {instanceID: 2394}
+      Script: {instanceID: 2402}
     - Class: 114
-      Script: {instanceID: 2420}
+      Script: {instanceID: 2428}
     - Class: 114
-      Script: {instanceID: 2754}
+      Script: {instanceID: 2762}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 2870}
+      Script: {instanceID: 2878}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 2910}
     - Class: 114
-      Script: {instanceID: 3050}
+      Script: {instanceID: 3058}
     - Class: 114
-      Script: {instanceID: 3306}
-    - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3314}
     - Class: 114
       Script: {instanceID: 3452}
     - Class: 114
-      Script: {instanceID: 3610}
+      Script: {instanceID: 3460}
     - Class: 114
-      Script: {instanceID: 3680}
+      Script: {instanceID: 3618}
     - Class: 114
-      Script: {instanceID: 3738}
+      Script: {instanceID: 3688}
     - Class: 114
-      Script: {instanceID: 3882}
+      Script: {instanceID: 3746}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 4048}
+      Script: {instanceID: 4034}
     - Class: 114
-      Script: {instanceID: 4142}
+      Script: {instanceID: 4056}
     - Class: 114
-      Script: {instanceID: 4238}
+      Script: {instanceID: 4150}
     - Class: 114
-      Script: {instanceID: 4268}
+      Script: {instanceID: 4246}
     - Class: 114
-      Script: {instanceID: 4304}
+      Script: {instanceID: 4276}
     - Class: 114
-      Script: {instanceID: 4396}
+      Script: {instanceID: 4312}
     - Class: 114
-      Script: {instanceID: 4400}
+      Script: {instanceID: 4404}
     - Class: 114
-      Script: {instanceID: 4474}
+      Script: {instanceID: 4408}
     - Class: 114
-      Script: {instanceID: 4592}
+      Script: {instanceID: 4482}
     - Class: 114
-      Script: {instanceID: 4774}
+      Script: {instanceID: 4600}
     - Class: 114
-      Script: {instanceID: 4988}
+      Script: {instanceID: 4782}
     - Class: 114
-      Script: {instanceID: 5250}
+      Script: {instanceID: 4996}
     - Class: 114
-      Script: {instanceID: 5428}
+      Script: {instanceID: 5258}
     - Class: 114
-      Script: {instanceID: 5480}
+      Script: {instanceID: 5384}
     - Class: 114
-      Script: {instanceID: 5910}
+      Script: {instanceID: 5436}
     - Class: 114
-      Script: {instanceID: 5960}
+      Script: {instanceID: 5488}
     - Class: 114
-      Script: {instanceID: 6352}
+      Script: {instanceID: 5918}
+    - Class: 114
+      Script: {instanceID: 5968}
+    - Class: 114
+      Script: {instanceID: 6360}
+    - Class: 114
+      Script: {instanceID: 336608}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -801,7 +847,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 6cef1a2f5ae3af78f4815d6fb076c559
+      Hash: 3c71b206da81ab57ee6e8a018b4cbcbf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -1033,7 +1079,139 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: d949440bce8ebd23a50ba0ed68445164
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: Rig
+  - hash:
+      serializedVersion: 2
+      Hash: 20a4fb848fc56d7d2b11ffdcf1a12c3b
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: RigBuilder
+  - hash:
+      serializedVersion: 2
+      Hash: 94d1a78de02380507d7d4b630f6f4527
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: TwistChainConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: RigTransform
+  - hash:
+      serializedVersion: 2
+      Hash: 11e377490d98b68984e2f2febb71d230
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: DampedTransform
+  - hash:
+      serializedVersion: 2
+      Hash: 7b6c282eaa68dd7067d5ebe46a7a587b
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: ChainIKConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: 663ee71987357c2869b08012cec786c2
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: MultiPositionConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: 4d0bec33788c91c1e3d3c90c8f49d5db
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: OverrideTransform
+  - hash:
+      serializedVersion: 2
+      Hash: f812bcb63c156a183728fe778d092bac
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: BlendConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: 1aa3c1056d70edf15fdd22dc9270d47e
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: MultiReferentialConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: d2eba8f2fd97b33476dea24e1b2164d9
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: MultiRotationConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: 87f8fc32f781d33a6b6782342a4b1b9a
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: BoneRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: 453375ba85653b954f3c31aaed6fb9f9
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: MultiAimConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: 177378ccefd514b3e290ba515d7e121b
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: TwistCorrection
+  - hash:
+      serializedVersion: 2
+      Hash: f67be20036b6ca50ced0b0e3383b6416
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: TwoBoneIKConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: fa409a8e8ee17fdc60daea003fb17f92
+    assemblyName: Unity.Animation.Rigging.dll
+    namespaceName: UnityEngine.Animations.Rigging
+    className: MultiParentConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: 13e22b494eec27d9cfde697f4dccc527
+    assemblyName: Unity.TerrainTools.dll
+    namespaceName: UnityEngine.Experimental.TerrainAPI
+    className: TerrainGizmos
+  - hash:
+      serializedVersion: 2
+      Hash: 4c11ac8a43930d2850ad82497b69a35e
+    assemblyName: Unity.TerrainTools.dll
+    namespaceName: 
+    className: TerrainGroup
+  - hash:
+      serializedVersion: 2
+      Hash: ffbcd99553d3d777cd0b39fa306118d5
+    assemblyName: StylizedWaterForURP.dll
+    namespaceName: StylizedWater
+    className: CausticsFeature
+  - hash:
+      serializedVersion: 2
+      Hash: 2b0f5757e8bd8418ca57d6a2b352aae3
+    assemblyName: StylizedWaterForURP.dll
+    namespaceName: StylizedWater
+    className: PlanarReflections
+  - hash:
+      serializedVersion: 2
+      Hash: 2af51937802e00454222a587d878cef3
+    assemblyName: StylizedWaterForURP.dll
+    namespaceName: StylizedWater
+    className: StylizedWaterURP
+  - hash:
+      serializedVersion: 2
+      Hash: 286dd4cdfeb849593d5c3d79a8639310
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BuoyantObject
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main.unity
-  playerPath: C:/Users/juliu/Fin_Sim/Moekki_sim/Moekki_simulator/Builds/0.1.1/Moekki_simulator.exe
+  playerPath: C:/Users/juliu/Fin_Sim/Moekki_sim/Moekki_simulator/Builds/0.1.3/Moekki_simulator.exe

@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+    //Experimental
+    public Animator anima;
     public CharacterController controller;
     public float speed = 12f;
     public float gravity = -9.81f;
@@ -37,6 +39,13 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
+
+        if(Input.GetButtonDown("Horizontal")|Input.GetButtonDown("Vertical")){
+            anima.SetBool("IsMoving", true);
+        }
+        else{
+            anima.SetBool("IsMoving", false);
+        }
 
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
