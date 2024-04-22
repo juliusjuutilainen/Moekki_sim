@@ -1,3 +1,2 @@
 # Moekki_sim
-Game to simulate the finnish moekki experience
-Planning to include only the build files. Will look into making it happen.
+Here lies the builds of moekki sim. not much to do. shoot the elfs, explore a digital wasteland. whatever, rake games lives on.
